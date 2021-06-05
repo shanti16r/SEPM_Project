@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <EditText
+        android:id="@+id/newTaskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:hint="New Task"/>
+    <Button
+        android:id="@+id/TaskBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newTaskText"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:textColor="@color/black"
+        android:hint="Date\nDD-MM-YYYY" />
+
+  <!--  <EditText
+        android:id="@+id/newTaskDate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newTaskText"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:hint="Date DD-MM-YYYY"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+-->
+   <!-- <EditText
+        android:id="@+id/newTaskTime"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newTaskText"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/newTaskButton"
+        android:background="@null"
+        android:hint="Time HH:MM"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+-->
+    <Button
+        android:id="@+id/newTaskTimeButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newTaskText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:layout_toStartOf="@+id/newTaskButton"
+        android:background="@null"
+        android:hint="Time\nHH:MM" />
+
+    <Button
+        android:id="@+id/newTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newTaskText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="0dp"
+        android:background="@android:color/transparent"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="16sp" />
+
+</RelativeLayout>
